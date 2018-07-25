@@ -1,8 +1,7 @@
 #!/bin/bash
 
-gofmt -s -w *.go
-go tool fix *.go
-go tool vet .
-
-go test .
+gofmt -s -w lib/*.go
+go tool fix lib/*.go
+go tool vet ./lib
+go test ./lib
 
