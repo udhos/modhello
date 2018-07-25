@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/udhos/modhello/modlib"
+	"github.com/udhos/modhello/modlib/v2"
 )
 
 func main() {
