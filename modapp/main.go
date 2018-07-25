@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/udhos/modhello/modlib"
+	"github.com/udhos/modhello/modlib/lib"
 )
 
 func main() {
@@ -11,5 +11,5 @@ func main() {
 }
 
 func run(a, b int) {
-	log.Printf("Sum(%d,%d) = %d", a, b, modlib.Sum(a, b))
+	log.Printf("Sum(%d,%d) = %d", a, b, lib.Sum(a, b))
 }
