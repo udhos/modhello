@@ -22,6 +22,11 @@ Publish version v1.0.0 for modlib.
     $ git tag modlib/v1.0.0
     $ git push origin modlib/v1.0.0 ;# publish tag
 
+Build the app.
+
+    $ cd modhello/modapp
+    $ go install
+
 Publish new version v2.0.0 for modlib.
 
     $ cd modhello
@@ -34,10 +39,15 @@ Publish new version v2.0.0 for modlib.
     $ git push --all
     $ git push origin modlib/v2.0.0 ;# publish tag
 
-Create new app app modhot depending on modlib v2.0.0.
+Create new app modhot depending on modlib v2.0.0.
 
     $ cat modhello/modhot/go.mod
     module github.com/udhos/modhello/modhot
 
     require github.com/udhos/modhello/modlib/v2 v2.0.0
+
+Build new app.
+
+    $ cd modhello/modhot
+    $ go install
 
