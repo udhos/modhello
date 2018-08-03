@@ -1,5 +1,7 @@
 # modhello
 
+Recipe based on https://github.com/golang/go/wiki/Modules
+
     Repo:    modhello
     Module:  modhello/modlib     -- go.mod lives here
     Package: modhello/modlib/lib -- this is imported from go code
