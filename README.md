@@ -6,6 +6,21 @@ Recipe based on https://github.com/golang/go/wiki/Modules
     Module:  modhello/modlib     -- go.mod lives here
     Package: modhello/modlib/lib -- this is imported from go code
 
+## Highlights
+
+- Host multiple modules under single repo.
+- Host multiple packages under single module.
+- Modules depend on full modules (not individual packages).
+- Go code imports packages (not modules).
+- import "domain.com/repo/module/package" for package (v0 or v1).
+- import "domain.com/repo/module/v2/package" for package v2.
+- Two ways to release v2 or higher:
+  1. Update the go.mod file to include a /v2 at the end of the module path.
+  2. Alternatively, create a v2 directory with a new go.mod file defining the module path ending with /v2.
+- Tag the repository with <modulename>/vX.X.X to publish new version for specific module.
+
+## Recipe
+
 Define module modlib.
 
     $ cat modhello/modlib/go.mod
