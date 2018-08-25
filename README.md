@@ -19,6 +19,16 @@ Recipe based on https://github.com/golang/go/wiki/Modules
   2. Alternatively, create a v2 directory with a new go.mod file defining the module path ending with /v2.
 - Tag the repository with <modulename>/vX.X.X to publish new version for specific module.
 
+## How to add intial Go Modules support for a repository
+
+    git clone https://.../repo
+    cd repo
+    go mod init
+    go mod tidy
+    git add go.mod go.sum
+    git commit
+    git push
+
 ## Recipe
 
 Define module modlib.
