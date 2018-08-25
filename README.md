@@ -21,7 +21,7 @@ Recipe based on https://github.com/golang/go/wiki/Modules
 
 ## How to add intial Go Modules support for a repository
 
-    git clone https://.../repo
+    git clone https://.../repo ;# must clone outside of GOPATH
     cd repo
     go mod init
     go mod tidy
