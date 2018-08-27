@@ -94,3 +94,7 @@ The major version is for all intents and purposes a completely different package
 
     import "github.com/user/testmodule/v2/pkg"
 
+## See also
+
+https://roberto.selbach.ca/intro-to-go-modules/
+
