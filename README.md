@@ -78,3 +78,19 @@ Build new app.
     $ cd modhello/modhot
     $ go install
 
+## How to update Modules used by your application
+
+### Non-major update
+
+By default, Go will not update modules without being asked.
+
+    $ go get -u                                ;# use the latest minor or patch releases
+    $ go get -u=patch                          ;# use the latest patch releases (to 1.0.1 but not to 1.1.0)
+    $ go get github.com/user/testmodule@v1.0.1 ;# update to a specific version
+
+### Major update
+
+The major version is for all intents and purposes a completely different package.
+
+    import "github.com/user/testmodule/v2/pkg"
+
